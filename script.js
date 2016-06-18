@@ -142,6 +142,8 @@ LG.prototype.init__g_r = function () {
   container.innerHTML = '';
   container.appendChild(frag);
 
+  container.style.top = '0px';
+
   var x = new LG({
     document: document,
     select: select
