@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+#LG_Bookmarklet, #LG_selectValue, #LG_input1Value, #LG_input2Value {
+  color: #333333;
+  font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+#LG_Bookmarklet {
+  position: fixed;
+  top: -125px;
+  left: 0;
+  right:0;
+  margin: auto;
+  width: 178px;
+  height: 100px;
+  background-color: #e2e2e2;
+  background: linear-gradient(to bottom, #e6e6e6 0%, #efefef 50%, #e2e2e2 100%);
+  border-radius: 0 0 3px 3px;
+  z-index: 999999999999;
+  box-shadow: 0 0 0 1px #666, 0 0 15px 4px #333;
+  transition: top 1s;
+}
+
+#LG_homeButton {
+  position: absolute;
+  cursor: pointer;
+}
+
+#LG_homeButton {
+  background: url('octocat.png') no-repeat center;
+  width: 16px;
+  height: 16px;
+  bottom: 4px;
+  right: 4px;
+  opacity: 0.5;
+}
+
+#LG_homeButton:hover {
+  opacity: 0.7;
+}
+
+#LG_selectValue {
+  position: absolute;
+  left: 10px;
+  top: 78px;
+  width: 140px;
+  height: 23px;
+}
+
+#LG_input1Value, #LG_input2Value {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+}
+
+#LG_input2Value {
+  top: 46px;
+}
