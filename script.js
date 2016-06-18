@@ -34,7 +34,7 @@ LG.prototype.init__i_c = function () {
   input1.oninput = function (e) {
     var value = parseFloat(e.target.value);
 
-    value = (value * ratio).toFixed(2);
+    value = parseFloat((value * ratio).toFixed(2));
 
     if (value) {
       input2.value = value + ' cm';
@@ -46,7 +46,7 @@ LG.prototype.init__i_c = function () {
   input2.oninput = function (e) {
     var value = parseFloat(e.target.value);
 
-    value = (value / ratio).toFixed(2)
+    value = parseFloat((value / ratio).toFixed(2));
 
     if (value) {
       input1.value = value + ' in';
